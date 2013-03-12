@@ -1,0 +1,168 @@
+# translation of ru.po to
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sergey B. Khvatov <xbatob@grouptechno.ru>, 2008.
+# Serguey Khvatov <S.XBATOB@gmail.com>, 2008.
+# Сергей Хватов <xbatob@grouptechno.ru>, 2009.
+# Serguei Khvatov <xbatob@grouptechno.ru>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: s.xbatob@gmail.com\n"
+"POT-Creation-Date: 2010-06-22 14:50+0400\n"
+"PO-Revision-Date: 2010-06-22 15:38+0400\n"
+"Last-Translator: Serguei Khvatov <xbatob@grouptechno.ru>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: main.c:85
+#, c-format
+msgid "bad speed value: %s"
+msgstr "%s: недопустимое значение скорости"
+
+#: main.c:97
+#, c-format
+msgid "bad tty option: %s"
+msgstr "Недопустимый параметр tty: %s"
+
+#: main.c:124
+#, c-format
+msgid "bad RTS control value: %s"
+msgstr "Недопустимое значение режима управления RTS: %s"
+
+#: main.c:131
+msgid "device is not set"
+msgstr "не задано устройство"
+
+#: main.c:134
+msgid "can not init tty"
+msgstr "не могу сынициализировать устройство"
+
+#: main.c:161
+msgid "Device name"
+msgstr "Имя устройства"
+
+#: main.c:164
+msgid "Set device speed"
+msgstr "Задать скорость устройства"
+
+#: main.c:167
+#, c-format
+msgid "Coma-separated list of tty options to set (%s)"
+msgstr "Список устанавливаемых параметров, разделённых запятыми (%s)"
+
+#: main.c:170
+msgid ""
+"Set rts line to given state (1 or 0 allways, 1 on transmit, 1 on receive)"
+msgstr ""
+"Установить сигнал RTS в заданное состояние (1 или 0 постоянно, 1 для "
+"передачи, 1 для приёма)"
+
+#: main.c:173
+#, c-format
+msgid "Escape character [%c]"
+msgstr "Экранирующий символ [%c]"
+
+#: main.c:180
+msgid "[device]"
+msgstr "[устройство]"
+
+#: main.c:181
+msgid "lighthweight serial communicator"
+msgstr "лёгкая программа-терминал для последовательного порта"
+
+#: main.c:200
+msgid ""
+"\n"
+"Good Bye!"
+msgstr ""
+"\n"
+"Превед, медвед!"
+
+#: rtel.c:76
+#, c-format
+msgid "Enter %c. to exit%sEnter %c%c to put %c%s"
+msgstr "Введите %c. для выхода%sВведите %c%c чтобы передать %c%s"
+
+#: rtel.c:80
+#, c-format
+msgid "Enter %cl to toggle logging%s"
+msgstr "Введите %cl чтобы включить или выключить регистрацию%s"
+
+#: rtel.c:83
+#, c-format
+msgid "Enter %c[<|>] to exec filter%s"
+msgstr "Введите %c[<|>] для запуска фильтра %s"
+
+#: rtel.c:93
+#, c-format
+msgid "logging is stopped\r\n"
+msgstr "Регистрация завершена\r\n"
+
+#: rtel.c:97
+#, c-format
+msgid "Enter logging file name [%s]\n"
+msgstr "имя файла регистрации [%s]\n"
+
+#: rtel.c:99
+msgid "File:"
+msgstr "Файл:"
+
+#: rtel.c:111
+#, c-format
+msgid "started logging to %s\r\n"
+msgstr "Начата регистрация в файл %s\r\n"
+
+#: rtel.c:113
+#, c-format
+msgid "can not start logging to %s"
+msgstr "не могу запустить регистрацию в %s"
+
+#: rtel.c:156
+msgid "Filter:"
+msgstr "Фильтр:"
+
+#~ msgid "Set parity"
+#~ msgstr "Установить паритет"
+
+#~ msgid "device name"
+#~ msgstr "имя устройства"
+
+#~ msgid "device speed"
+#~ msgstr "скорость устройства"
+
+#~ msgid "set rts line to given state"
+#~ msgstr "установить сигнал rts в указанное состояние"
+
+#~ msgid "1|0|t|r"
+#~ msgstr "1|0|t|r"
+
+#~ msgid "escape character"
+#~ msgstr "экранирующий символ"
+
+#~ msgid "CHAR"
+#~ msgstr "СИМВОЛ"
+
+#~ msgid "show version and exit"
+#~ msgstr "показать версию и выйти"
+
+#~ msgid "FILE"
+#~ msgstr "ФАЙЛ"
+
+#~ msgid "SPEED"
+#~ msgstr "СКОРОСТЬ"
+
+#~ msgid "%s: bad speed value"
+#~ msgstr "%s: плохое значение скорости"
+
+#~ msgid "bad RTS control value: %c"
+#~ msgstr "Недопустимое значение режима управления RTS: %c"
+
+#~ msgid "no device set"
+#~ msgstr "не задано устройство"

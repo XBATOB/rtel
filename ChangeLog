@@ -1,0 +1,242 @@
+2009-12-08 12:39  xbatob
+
+	* rtel.spec, src/tty.c: в случае ошибки работы с tty пропущен один
+	  return
+
+2009-11-30 13:57  xbatob
+
+	* rtel.kdevelop, rtel.spec, src/main.c: fixes for new libc
+
+2009-02-18 14:29  xbatob
+
+	* rtel.kdevelop, rtel.spec, src/main.c: исправлена фатальная ошибка
+
+2009-02-18 11:37  xbatob
+
+	* rtel.spec, src/main.c, src/tty.c, src/tty.h: Исправлена установка
+	  паритетаб добавлена установка размера символа
+
+2009-02-12 07:47  xbatob
+
+	* configure.in, po/rtel.pot, po/ru.po, rtel.kdevelop, rtel.spec,
+	  src/main.c: - выкинут popt;
+	  - добавлена возможность установки паритета на линии
+
+2008-12-09 12:47  xbatob
+
+	* config.h.in: очередные проблемы с установкой - не клался
+	  ld-linux.so, не все нужные файлы копировались в /etc.
+	  Опять - ненужные файлы
+
+2008-08-13 13:46  xbatob
+
+	* rtel.kdevelop, rtel.spec, src/main.c: был пропущеи break в
+	  разборе параметров
+
+2008-06-24 10:20  xbatob
+
+	* po/rtel.pot, po/ru.po: обновлён перевод
+
+2008-06-24 10:09  xbatob
+
+	* ChangeLog, config.h.in, configure.in, rtel.kdevelop, rtel.spec,
+	  src/main.c: Может быть собрана с использованием popt или argp для
+	  разбора коммандной строки (у обоих методов есть недостатки).
+
+2008-06-16 11:22  xbatob
+
+	* FILES: filelist fixed
+
+2008-06-16 11:12  xbatob
+
+	* rtel.kdevelop, src/main.c: conflicting option removed
+
+2008-06-16 11:08  xbatob
+
+	* rtel.kdevelop, src/Makefile.am, src/debug.h, src/node.c,
+	  src/rtel.c: debug code added
+
+2008-06-16 09:48  xbatob
+
+	* src/rtel.c: #include missed
+
+2008-06-16 09:45  xbatob
+
+	* rtel.kdevelop, src/rtel.c: bug fixed - doesn't compile w/o
+	  WITH_FILTER
+
+2008-06-16 09:32  xbatob
+
+	* aclocal.m4, autom4te.cache: extra files deleted
+
+2008-06-16 09:27  xbatob
+
+	* ABOUT-NLS, FILES, Makefile.in, aclocal.m4,
+	  autom4te.cache/output.1, autom4te.cache/traces.1, configure,
+	  configure.in, po/rtel.pot, po/ru.po, rtel.kdevelop, rtel.spec,
+	  src/Makefile.am, src/main.c, src/node.c, src/node.h,
+	  src/ringbuf.c, src/ringbuf.h, src/rtel.c, src/rtel.h,
+	  templates/c, templates/h: filters implemented
+
+2008-06-07 10:40  xbatob
+
+	* Makefile.in, rtel.kdevelop, src/main.c: ident fixed
+
+2008-06-03 18:27  xbatob
+
+	* Makefile.in, autom4te.cache/requests, po/rtel.pot, po/ru.po:
+	  translation updated
+
+2008-06-03 10:47  xbatob
+
+	* autom4te.cache/output.1, autom4te.cache/traces.1, config.h.in,
+	  configure, configure.in, rtel.kdevelop, rtel.spec, src/main.c,
+	  src/rtel.c, src/rtel.h: Can accept name of logfile via readline()
+
+2008-05-14 14:05  xbatob
+
+	* FILES, autom4te.cache/requests, po/rtel.pot, po/ru.po, rtel.spec,
+	  src/Makefile.am, src/main.c, src/msgs.h, src/rtel.c, src/tty.c:
+	  diagnostic improved
+
+2008-04-29 10:21  xbatob
+
+	* po/rtel.pot, po/ru.po: translations updated
+
+2008-04-29 09:25  xbatob
+
+	* rtel.kdevelop, rtel.spec, src/main.c: Fixed help & diagnostic
+	  messages.
+	  Translations are NOT UPDATED.
+
+2008-04-28 08:33  xbatob
+
+	* src/main.c: version string is formatted
+
+2008-04-28 08:28  xbatob
+
+	* src/gettext.h, src/main.c, src/msgs.h, src/ringbuf.c,
+	  src/ringbuf.h, src/rtel.c, src/rtel.h, src/rts.h, src/tty.c,
+	  src/tty.h: version string is more informative
+
+2008-04-28 08:20  xbatob
+
+	* src/main.c: version string is more informative
+
+2008-04-28 07:51  xbatob
+
+	* rtel.spec, src/main.c: Can leave device speed unchanged
+
+2008-04-23 08:37  xbatob
+
+	* rtel.kdevelop, src/Makefile.am: redundant linking with libpopt
+	  removed
+
+2008-04-23 08:34  xbatob
+
+	* Makefile.in, aclocal.m4, autom4te.cache/requests,
+	  autom4te.cache/traces.1, rtel.kdevelop, src/Makefile.in,
+	  src/main.c: deleted unneeded files
+
+2008-04-01 11:04  xbatob
+
+	* po/rtel.pot, po/ru.po: translations updated
+
+2008-04-01 10:49  xbatob
+
+	* Makefile.in, aclocal.m4, autom4te.cache/output.1,
+	  autom4te.cache/requests, autom4te.cache/traces.1, configure,
+	  configure.in, rtel.kdevelop, rtel.spec, src/Makefile.in,
+	  src/main.c, src/rtel.c, src/rtel.h: can log input
+
+2008-03-28 11:40  xbatob
+
+	* po/ru.po, rtel.kdevelop: translation fixed :-)
+
+2008-03-27 12:00  xbatob
+
+	* po/ru.po, rtel.kdevelop: translation fixed :-)
+
+2008-03-24 13:50  xbatob
+
+	* autom4te.cache/output.1, autom4te.cache/requests,
+	  autom4te.cache/traces.1, config.h.in, configure, configure.in,
+	  po/rtel.pot, po/ru.po, rtel.kdevelop, rtel.spec, src/Makefile.am,
+	  src/Makefile.in, src/main.c, src/tty.c, src/tty.h: use popt
+	  instead of getopt
+
+2008-03-11 13:27  xbatob
+
+	* src/gettext.h: localisation + russuan messages
+
+2008-03-11 13:22  xbatob
+
+	* ChangeLog, FILES, Makefile.am, Makefile.in, aclocal.m4,
+	  autom4te.cache/output.1, autom4te.cache/output.2,
+	  autom4te.cache/requests, autom4te.cache/traces.1, config.h.in,
+	  config.rpath, configure, configure.in, m4, m4/ChangeLog,
+	  m4/gettext.m4, m4/iconv.m4, m4/lib-ld.m4, m4/lib-link.m4,
+	  m4/lib-prefix.m4, m4/nls.m4, m4/po.m4, m4/progtest.m4, po,
+	  po/ChangeLog, po/LINGUAS, po/Makefile.in.in, po/Makevars,
+	  po/POTFILES.in, po/Rules-quot, po/boldquot.sed,
+	  po/en@boldquot.header, po/en@quot.header, po/insert-header.sin,
+	  po/quot.sed, po/remove-potcdate.sin, po/rtel.pot, po/ru.po,
+	  rtel.kdevelop, rtel.spec, src/Makefile.am, src/Makefile.in,
+	  src/main.c, src/msgs.h, src/rtel.c: localisation + russuan
+	  messages
+
+2008-02-20 10:51  xbatob
+
+	* src/main.c: cosmetics
+
+2008-02-20 10:44  xbatob
+
+	* src/main.c: info string changed
+
+2008-02-20 10:35  xbatob
+
+	* aclocal.m4, autom4te.cache/output.1, autom4te.cache/output.2,
+	  autom4te.cache/requests, autom4te.cache/traces.1,
+	  autom4te.cache/traces.2, configure, configure.in, rtel.spec,
+	  src/Makefile.in, src/main.c, src/ringbuf.c, src/ringbuf.h,
+	  src/rtel.c, src/rtel.h: - can change escape character
+	  - online help implemented
+
+2007-11-13 13:29  maxs
+
+	* src/tty.h: Just a test of SVN functionality under windows
+
+2007-10-27 08:34  xbatob
+
+	* autom4te.cache/requests, configure.in, rtel.kdevelop, rtel.spec:
+	  package version fixed
+
+2007-10-17 11:43  xbatob
+
+	* autom4te.cache/requests, rtel.kdevelop, src/main.c, src/msgs.h,
+	  src/ringbuf.c, src/ringbuf.h, src/rtel.c, src/rtel.h, src/rts.h,
+	  src/tty.c, src/tty.h: properties changed
+
+2007-10-17 11:04  xbatob
+
+	* rtel.kdevelop.pcs: extra files deleted
+
+2007-10-17 11:03  xbatob
+
+	* rtel.kdevelop, rtel.kdevelop.pcs, rtel.kdevses: e.t.m...
+
+2007-10-17 10:54  xbatob
+
+	* ., AUTHORS, COPYING, ChangeLog, Doxyfile, FILES, INSTALL,
+	  Makefile.am, Makefile.cvs, Makefile.in, NEWS, README, TODO,
+	  aclocal.m4, autom4te.cache, autom4te.cache/output.0,
+	  autom4te.cache/output.1, autom4te.cache/output.2,
+	  autom4te.cache/requests, autom4te.cache/traces.0,
+	  autom4te.cache/traces.1, autom4te.cache/traces.2, config.guess,
+	  config.h.in, config.sub, configure, configure.in, depcomp,
+	  install-sh, ltmain.sh, missing, mkinstalldirs, rtel.kdevelop,
+	  rtel.kdevelop.pcs, rtel.kdevses, rtel.spec, src, src/Makefile.am,
+	  src/Makefile.in, src/main.c, src/msgs.h, src/ringbuf.c,
+	  src/ringbuf.h, src/rtel.c, src/rtel.h, src/rts.h, src/tty.c,
+	  src/tty.h, templates, templates/c, templates/h: initial revision
+
