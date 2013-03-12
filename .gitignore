@@ -1,13 +1,75 @@
-# Compiled Object files
-*.slo
-*.lo
+#
+# Normal rules
+#
+.*
 *.o
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-
-# Compiled Static libraries
-*.lai
-*.la
+*.o.*
 *.a
+*.so
+*.so.dbg
+*.bin
+*.gz
+*.bz2
+*.xz
+*.moc
+
+#
+# Top-level generic files
+#
+bin
+build
+tags
+TAGS
+!.gitignore
+!.gitattributes
+
+#
+# Editors / debuggers / other output files
+#
+*~
+*.bak
+*.orig
+*.patch
+callgrind.out.*
+moc_*
+
+#
+# Git stuff
+#
+# stgit directories
+patches-*
+
+#
+# VS binaries output
+#
+bin/*
+
+#
+# VS temporary files
+#
+*.ncb
+*.suo
+*.sdf
+*.opensdf
+*.sln.cache
+*.vsp
+ipch
+*.user
+
+#
+# CMake temporary files
+#
+Makefile
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+
+#
+# OS specific
+#
+# MacOS
+.DS_Store
+
+#
+# Special exceptions
+#
